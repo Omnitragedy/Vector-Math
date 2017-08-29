@@ -13,7 +13,7 @@ package vector.math;
 public class Vector2 {
     
     private float x, y;
-    public int id;      //the number of the vector on our worksheet
+    public final int id;
     
     public Vector2(float r, float theta) {
         x = r * (float)Math.cos(Math.toRadians(theta));
@@ -33,7 +33,7 @@ public class Vector2 {
         return this;
     }
     
-    //set the number of vector on our worksheet
+    //set the id of vector
     public void setid(int id) {
         this.id = id;
     }
